@@ -15,7 +15,7 @@
 ## Question 5:
 ![Screenshot (11)](https://github.com/SaifShahAi/pffall23/assets/142867921/e8cbda0b-50c9-461e-9826-482e3401e1de)
 
-# #Question 6:
+## Question 6:
 ![Screenshot (12)](https://github.com/SaifShahAi/pffall23/assets/142867921/2bad5341-899d-4311-96a1-fc2e24b28ecd)
 
 ## Question 7:
