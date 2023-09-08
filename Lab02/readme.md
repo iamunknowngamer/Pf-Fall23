@@ -1,4 +1,4 @@
-Assignment 3
+# Assignment 3
 
 ## Question 1:
 ![Scratch 3 18 1 8_29_2023 1_58_37 PM](https://github.com/SaifShahAi/pffall23/assets/142867921/4142ce3e-6bb8-4c44-8133-ea5234fbd815)
