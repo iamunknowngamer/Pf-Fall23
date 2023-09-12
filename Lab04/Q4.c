@@ -26,7 +26,7 @@ int main() {
     // Calculating discriminant
     discriminant = b * b - 4 * a * c;
 
-    // Root will be given only if they are real
+    // Roots will be given only if they are real
     if (discriminant >= 0) {
         // Calculate the roots
         root1 = (-b + sqrt(discriminant)) / (2 * a);
