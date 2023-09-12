@@ -10,18 +10,17 @@
 //--Global Variables--//
 
 int main() {
-	int a;
-	int b;
-	printf("What is the 1st number: ");
-	scanf("%d", &a);
-	printf("What is the 2nd number: ");
-	scanf("%d", &b);
-	int c = a*a;
-	int d = b*b;
-	printf("----Press 'S' key then press enter for output----");
-	int sum = c + d;
-	scanf("%d", &sum);
-	printf("Sum is: %d", sum);
+	 int n, num, sum = 0;
+	 printf("Define any number: ");
+	 scanf("%d", &n);
+	
+	for (int i = 0; i < n; i++) 
+	{
+        printf("Enter integer %d: ", i + 1);
+        scanf("%d", &num);
+        sum += num * num;
+    }
+	printf("The sum of the squares is: %d\n", sum);
 	return 0;
 }//end main
 	
