@@ -12,8 +12,10 @@
 int main()  
 {  
   int n;  
-  printf("Define a number: ");  
+  
+  printf("Enter number of rows: ");  
   scanf("%d",&n);  
+  
   for(int i=1; i<=n; i++)  
   {  
      for(int j=i; j<=n; j++)  
@@ -27,6 +29,7 @@ int main()
      }  
      printf("\n");  
   }  
+  
   for(int i=n-1; i>=1; i--)  
   {  
      for(int j=n; j>=i; j--)  
@@ -42,4 +45,5 @@ int main()
   }  
   
   return 0;  
-}//end main
+} //end main 
+
