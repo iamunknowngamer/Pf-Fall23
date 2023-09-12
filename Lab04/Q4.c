@@ -13,7 +13,7 @@ int main() {
     double a, b, c;
     double discriminant, root1, root2;
 
-    // Ask the user for coefficients
+    // Ask Co-efficients
     printf("Enter the coefficient a: ");
     scanf("%lf", &a);
 
@@ -23,10 +23,10 @@ int main() {
     printf("Enter the coefficient c: ");
     scanf("%lf", &c);
 
-    // Calculate the discriminant
+    // Calculating discriminant
     discriminant = b * b - 4 * a * c;
 
-    // Check if the discriminant is non-negative
+    // Root will be given only if they are real
     if (discriminant >= 0) {
         // Calculate the roots
         root1 = (-b + sqrt(discriminant)) / (2 * a);
@@ -36,7 +36,7 @@ int main() {
         printf("Root 1 = %.2lf\n", root1);
         printf("Root 2 = %.2lf\n", root2);
     } else {
-        // No real roots
+        // Not real roots
         printf("No real roots exist.\n");
     }
 
