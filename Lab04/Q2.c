@@ -1,6 +1,6 @@
 /* Programmer: Syed Saif ur Rehman Shah
 * Date: 9/12/2023
-* Description: This is the code for Question 1
+* Description: This is the code for Question 2
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/tree/main/Lab03
 */
 
