@@ -1,52 +1,42 @@
 #include <stdio.h>
-#include <stdlib.h>
- 
-// Driver code
-int main()
-{
-    char ch;
-    double a, b;
-    while (1) {
-        printf("Enter an operator (+, -, *, /), "
-               "if want to exit press x: ");
-        scanf(" %c", &ch);
- 
-        // to exit
-        if (ch == 'x')
-            exit(0);
-        printf("Enter the first and second number: ");
-        scanf("%lf %lf", &a, &b);
- 
-        // Using switch case we will differentiate
-        // operations based on different operator
-        switch (ch) {
- 
-        // For Addition
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    
+    switch (operator) {
         case '+':
-            printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+            result = num1 + num2;
             break;
- 
-        // For Subtraction
         case '-':
-            printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+            result = num1 - num2;
             break;
- 
-        // For Multiplication
         case '*':
-            printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+            result = num1 * num2;
             break;
- 
-        // For Division
         case '/':
-            printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+                return 1; 
+            }
             break;
- 
-        // If operator doesn't match any case constant
         default:
-            printf(
-                "Error! please write a valid operator\n");
-        }
- 
-        printf("\n");
+            printf("Error: Invalid operator.\n");
+            return 1; 
     }
-}
+
+
+    printf("Result: %lf\n", result);
+
+    return 0;
+}//end main
