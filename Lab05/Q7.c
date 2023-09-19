@@ -5,7 +5,11 @@ int main() {
     int N,discount_amount,discount_price;
     printf("kitnay paisy kharach keye: ");
     scanf("%d", &N);
-    if (N>1999)
+    if (N<1999)
+    {
+        printf("No discount for you");
+    }
+    else if (N==2000)
     {
         discount_amount = (N/100)*50;
         discount_price = N - discount_amount;
