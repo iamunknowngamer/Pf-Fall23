@@ -33,3 +33,7 @@ int main() {
     printf("jo piasy hum ne kharach keye: %d", N);
     printf("\nkinta discount mila: %d", discount_amount);
     printf("\njo piasy discount ke baad dene paray: %d", discount_price);
+
+    return 0;
+    
+}//udru main likha ha 
