@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &N);
     if (N<1999)
     {
-        printf("No discount for you");
+        printf("No discount for you\n");
     }
     else if (N==2000)
     {
