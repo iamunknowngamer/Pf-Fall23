@@ -16,7 +16,7 @@ int main() {
 	h = N % 10000;
 	l = N / 10000;
 	
-	printf("%4d %4d", h, l);
+	printf("%04d%04d", h, l);
 	
 	return 0;
 
