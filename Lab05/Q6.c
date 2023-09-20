@@ -9,7 +9,7 @@ int main() {
     {
         bit4 =0;
     }
-    else if (bit7 ==1)
+    if (bit7 ==1)
     {
         bit7 =0;
     }
