@@ -8,18 +8,18 @@ int main () {
     printf("Enter the values of a , b and c of a quadratic equation: \n");
     scanf("%d%d%d",&a,&b,&c);
     D = (b*b) - (4*a*c);
-    printf("The discriminant is : %f", D);
+    printf("\nThe discriminant is : %f\n", D);
     
     if (D>=0)
     {
-        printf("\nThe Roots are Real, Calculating the roots... please wait..");
+        printf("\nThe Roots are Real, Calculating the roots... please wait..\n");
         Root1 = (-b - sqrt(D))/ (2*a);
         Root2 = (-b + sqrt(D))/ (2*a);
         printf("\nThe Roots are : %f %f", Root1, Root2);
     }
     else
     {
-        printf("\nThe Roots are Complex!!");
+        printf("\nThe Roots are Complex!!\n");
     }
 
 }//end
