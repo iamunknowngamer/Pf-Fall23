@@ -3,7 +3,7 @@
 int main() {
    
     int N;
-    printf("Enter a 8 bit binary number: ");
+    printf("Enter a 8 bit binary number: \n");
     scanf("%08d",&N);
     
     if ((((N/1000)%10) == 1) && (((N/1000000)%10) == 1))
@@ -11,7 +11,10 @@ int main() {
         N = N - 1000 - 1000000;
         printf("%08d", N);
     }
-    
+    else
+    {
+        printf("\n%08d", N);
+    }
     return 0;
     
 }
