@@ -1,5 +1,5 @@
 ### Question 1
-![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/ac12e647-e913-4dfa-b15f-2bec9894c417)
+![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/c01297b1-0f80-4bff-bbcf-f26441c76f49)
 
 ### Question 2
 ![2](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/f2152006-8a02-4578-b38a-55c7b6093a97)
