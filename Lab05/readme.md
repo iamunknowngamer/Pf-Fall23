@@ -27,3 +27,6 @@
 ## Question 9:
 ![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/c9b40fa9-5192-495f-8426-34ae32abb334)
 
+## Question 10:
+![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/5eab406b-039c-45cd-b6d7-a01c24e99972)
+
