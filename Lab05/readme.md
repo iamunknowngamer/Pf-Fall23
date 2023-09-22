@@ -8,3 +8,6 @@
 
 ## Question 3:
 ![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/a5e92634-d194-4efa-819d-7505b1d8e1f6)
+
+## Question 4:
+![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/edc865fe-c0d9-44bd-8b0b-fc4eb7cd1e65)
