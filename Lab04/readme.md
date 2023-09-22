@@ -5,7 +5,7 @@
 ![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/ab4292df-c724-4189-95d9-7d103f338d75)
 
 ### Question 3
-![3](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/f0672ab0-c171-4306-ae0f-201e619a24e5)
+![1](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/dc6feb79-874c-4686-9135-0edf51450855)
 
 ### Question 4
 ![4](https://github.com/iamunknowngamer/Pf-Fall23/assets/144406935/9097f32e-3cbc-4eef-a87b-9940d74b2e51)
