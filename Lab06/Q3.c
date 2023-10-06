@@ -32,5 +32,7 @@ int main()
 	
 	int lcm = (a*b)/gcd;
 	printf(" , while the LCM is %d", lcm);
+
+	return 0;
 	
 }//end
