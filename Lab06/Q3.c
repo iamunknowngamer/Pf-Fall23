@@ -3,6 +3,8 @@
  * Description: Practicing Programming.
 */
 
+
+
 #include <stdio.h>
 
 int main() 
@@ -12,8 +14,8 @@ int main()
 	printf("Enter two numbers: ");
 	scanf("%d%d",&a,&b);
 	
-	if (a>b) gcd=b;
-	else if (b>a) gcd=a;
+	if (a>=b) gcd=b;
+	else if (b>=a) gcd=a;
 	
 	while(1)
 	{
