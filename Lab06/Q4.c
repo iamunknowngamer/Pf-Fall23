@@ -15,34 +15,40 @@ int main()
 	
 	for(i=a; i<=b; i++)
 	{
-		if (a<=9)	
+		if (i<=9)	
 		{
 			switch (i)
 			{
 				case 0:
-					printf("zero");
+					printf(" zero");
 				case 1:
-					printf("one");
+					printf(" one");
 				case 2:
-					printf("two");
+					printf(" two");
 				case 3:
-					printf("three");
+					printf(" three");
 				case 4:
-					printf("four");
+					printf(" four");
 				case 5:
-					printf("five");
+					printf(" five");
 				case 6:
-					printf("six");
+					printf(" six");
 				case 7:
-					printf("seven");
+					printf(" seven");
 				case 8:
-					printf("eight");
+					printf(" eight");
 				case 9:
-					printf("nine");
+					printf(" nine");
 			}
 			
+		}
+		else if(i>9)
+		{
+			if(i%2==0) printf(" Even");
+			else printf(" Odd");
 		}
 	
 	}
 
 }
+
