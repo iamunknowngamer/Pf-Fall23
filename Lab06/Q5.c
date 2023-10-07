@@ -66,7 +66,7 @@ int main()
     }
 }//end
 
-##Alternate easy method:
+//Alternate method(easy):
 #include <stdio.h>
 
 int main()
