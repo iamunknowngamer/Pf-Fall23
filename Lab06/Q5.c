@@ -1,3 +1,9 @@
+/**
+ * Programmer: Syed Saif ur Rehman Shah.
+ * Description: Practicing Programming.
+*/
+
+
 #include <stdio.h>
 
 int main()
