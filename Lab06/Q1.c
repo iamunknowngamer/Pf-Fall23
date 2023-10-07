@@ -1,6 +1,7 @@
 /**
  * Programmer: Syed Saif ur Rehman Shah.
- * Description: Practicing Programming.
+ * Description: Code for Question 1.
+ * Code Type: Simple.
 */
 
 #include <stdio.h>
