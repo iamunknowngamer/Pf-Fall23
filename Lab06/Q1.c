@@ -1,6 +1,6 @@
 /**
  * Programmer: Syed Saif ur Rehman Shah.
- * Description: Practising Programming.
+ * Description: Practicing Programming.
 */
 
 #include <stdio.h>
