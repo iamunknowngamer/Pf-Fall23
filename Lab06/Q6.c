@@ -274,7 +274,7 @@ printf("\n You lose :(");
 
 }//end
 
-Alternate (Nested Loops) Method:
+//Alternate (Nested Loops) Method:
 
 #include <stdio.h>
 #include <unistd.h>
