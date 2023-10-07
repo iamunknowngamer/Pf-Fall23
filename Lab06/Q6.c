@@ -1,6 +1,6 @@
 /**
  * Programmer: Syed Saif ur Rehman Shah.
- * Description: Practicing Programming.
+ * Description: This Question is done by two methods by me and both are uplaoded here.
 */
 
 #include <stdio.h>
