@@ -273,3 +273,77 @@ sleep(1);
 printf("\n You lose :(");
 
 }//end
+
+Alternate (Nested Loops) Method:
+
+#include <stdio.h>
+#include <unistd.h>
+
+
+int main()
+{
+    int N,j;
+    int k = 21;
+    int b =21;
+    printf(" 'The MatchStick Game' \n");
+    for(j=1; j<=21; j++)
+    {
+        printf(" |");
+    }
+    for(int i=1; i<=4; i++)
+    {   
+        printf("\n\n Ur turn, Choose a number (1,2,3,4): ");
+        scanf("%d", &N);
+        int d;
+        if (N<=4)
+        {
+            int l= k - d - N;
+            k=l;
+            for(int total= l ; total>0; total--)
+            {
+                printf(" |");
+            }
+                sleep(1);
+                printf("\n The consule is taking his turn...\n");
+                sleep (1);
+                if (N<5)
+                {
+                    N = 5;
+                    int c = b - N;
+                    b = c;
+                    for (int t=c; t>0; t--)
+                    {
+                        printf(" |");
+                    }
+                }
+            d = k - b;
+        }
+        else
+        {
+            printf(" Please abide by the rules, choose any number from 1 to 4: ");
+            scanf("%d", &N);
+            int l= k - d - N;
+            k=l;
+            for(int total= l ; total>0; total--)
+            {
+                printf(" |");
+            }
+            sleep(1);
+            printf("\n The consule is taking his turn...\n");
+            sleep (1);
+            if (N<5)
+            {
+                N = 5;
+                int c = b - N;
+                b = c;
+                for (int t=c; t>0; t--)
+                {
+                    printf(" |");
+                }
+            }
+            d = k - b;
+        }
+    }
+    printf("\n\n You Lose :(");
+
+}//end
