@@ -1,7 +1,7 @@
 /**
  * Programmer: Syed Saif ur Rehman Shah.
  * Description: Practicing Programming.
-*/
+ */
 
 
 #include <stdio.h>
@@ -16,7 +16,7 @@ int main()
         count = count + 1;
         if (count==4) break;
     }
-    printf("\n            ");
+    printf("\n\n            ");
     i=1;count=0;
     while(1)
     {
@@ -24,7 +24,7 @@ int main()
         count = count + 1;
         if (count==2) break;
     }
-    printf("\n");
+    printf("\n\n");
     i=2;count=0;
     while(1)
     {
@@ -32,7 +32,7 @@ int main()
         count = count + 1;
         if (count==4) break;
     }
-    printf("\n            ");
+    printf("\n\n            ");
     i=3;count=0;
     while(1)
     {
@@ -40,7 +40,7 @@ int main()
         count = count + 1;
         if (count==2) break;
     }
-    printf("\n");
+    printf("\n\n");
     i=4;count=0;
     while(1)
     {
@@ -48,7 +48,7 @@ int main()
         count = count + 1;
         if (count==4) break;
     }
-    printf("\n            ");
+    printf("\n\n            ");
     i=5;count=0;
     while(1)
     {
@@ -56,7 +56,7 @@ int main()
         count = count + 1;
         if (count==2) break;
     }
-    printf("\n");
+    printf("\n\n");
     i=6;count=0;
     while(1)
     {
