@@ -19,6 +19,7 @@ int main()
         sum += arr[i];
     }
     printf("\nThe sum is: %d", sum);
+    return 0;
 }//end
 
 
