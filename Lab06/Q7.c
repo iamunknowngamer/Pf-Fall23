@@ -7,7 +7,8 @@
 
 int main()
 {
-    int N,sum;
+    int N;
+    int sum = 0;
     printf("Enter the number of values you want to sum: ");
     scanf("%d", &N);
     int arr[N];
