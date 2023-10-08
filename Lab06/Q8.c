@@ -19,7 +19,7 @@ int main()
     }
     printf("Uno Reverse Card... \n");
     sleep(1);
-    for (int j=N-1; j>=0; --j)
+    for (int j=N-1; j>=0; j--)
     {
         printf(" %d", arr[j]);
     }
