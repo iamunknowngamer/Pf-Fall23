@@ -32,6 +32,6 @@ int main()
         }
     }
     
-    printf("Maximun number: %d\nMinimun number: %d", max , min);
+    printf("Maximum number: %d\nMinimum number: %d", max , min);
 
 }//end
