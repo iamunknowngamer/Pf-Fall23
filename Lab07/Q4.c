@@ -21,21 +21,46 @@ int main()
     {
         for(int j=0; j<3; j++)
         {
-            scanf("%d",&t[j][i]);
+            t[i][j] = m[j][i];
         }
     }
+    int S;
     for(int i=0; i<3; i++)
     {
         for(int j=0; j<3; j++)
         {
             if(m[i][j]==t[i][j])
             {
-                printf("The matrix %d is Symmetric", m[i][j]);
+                S = 1;
             }
             else
             {
-                printf("The matrix %d is not Symmetric", m[i][j]);
+                S = 0;
             }
+        }
+    }
+    if(S==1)
+    {
+        printf("The given array is symmetric\n");
+        for(int i=0; i<3; i++)
+        {
+            for(int j=0; j<3; j++)
+            {
+                printf("%d ", m[i][j]);
+            }
+            printf("\n");
+        }
+    }
+    else
+    {
+        printf("The given array is symmetric\n");
+        for(int i=0; i<3; i++)
+        {
+            for(int j=0; j<3; j++)
+            {
+                printf("%d ", m[i][j]);
+            }
+            printf("\n");
         }
     }
 }//end
