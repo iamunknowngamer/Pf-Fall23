@@ -6,7 +6,7 @@
  
 #include <stdio.h>
 
-int processArray(int N, int arr[N], int sum, int max, int min) 
+void processArray(int N, int arr[N], int sum, int max, int min) 
 {
     sum = 0;
     max = arr[0];
