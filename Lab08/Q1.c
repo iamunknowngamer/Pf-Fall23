@@ -1,3 +1,9 @@
+/* Programmer: Syed Saif ur Rehman Shah
+* Date: 10/10/2023
+* Description: This is the code for Question 1
+* Related files: https://github.com/iamunknowngamer/Pf-Fall23/tree/main/Lab03
+*/
+
 #include <stdio.h>
 
 void swap(int a, int b)
