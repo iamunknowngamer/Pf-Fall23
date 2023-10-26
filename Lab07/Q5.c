@@ -52,10 +52,29 @@ void face(int n)
     }
 }
 
+void body(int n)
+{
+    for(int i=0; i<3*n-2; i++) printf("*");
+    printf("\n");
+    for(int j=0; j<n-1; j++)
+    {
+        printf("**  ");
+        for(int k=0; k<n; k++)
+        {
+            printf("*");
+        }
+        printf("  **\n");
+    }
+    for(int owo=0; owo<n-1; owo++) printf(" ");
+    for(int uwu=0; uwu<n; uwu++) printf("*");
+}
+    
+
 
 int main()
 {
     int n=5;
     cap(n);
     face(n);
+    body(n);
 }
