@@ -26,7 +26,7 @@ void cap(int n)
         printf("*");
     }
     printf("\n");
-} 
+}//end the cap
 
 void face(int n)
 {
@@ -50,7 +50,7 @@ void face(int n)
                 printf("| |\n");
         }
     }
-}
+}//end face
 
 void body(int n)
 {
@@ -67,14 +67,28 @@ void body(int n)
     }
     for(int owo=0; owo<n-1; owo++) printf(" ");
     for(int uwu=0; uwu<n; uwu++) printf("*");
-}
+}//end body
+
+void legs(int n)
+{
+    printf("\n");
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<n-1; j++) printf(" ");
+        printf("** **\n");
+    }
+    for(int k=0; k<n-3; k++)
+    {
+        printf(" ");
+        for(int owo=0; owo<n; owo++) printf("*");
+    }
+}//end legs
     
-
-
 int main()
 {
     int n=5;
     cap(n);
     face(n);
     body(n);
-}
+    legs(n);
+}//end main
