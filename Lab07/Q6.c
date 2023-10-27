@@ -40,6 +40,4 @@ int main() {
             printf("Frequency of %d = %d\n", arr[i], frequency[i]);
         }
     }
-
-    return 0;
 }
