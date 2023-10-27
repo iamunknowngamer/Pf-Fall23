@@ -27,8 +27,8 @@ int main()
             
             if(performance[i][j] > max) max = performance[i][j];
             
-            if(performance[i][j]>=50) hc++;
-            else if(performance[i][j]>=100) c++;
+            if(performance[i][j]>=100) c++;
+            else if(performance[i][j]>=50) hc++;
         }
         average = total/n;
         printf("Total Runs: %d\nHighest Score: %d\nAverage: %.2f\nHalf Centuries: %d\nCenturies: %d", total, max, average, hc, c);
