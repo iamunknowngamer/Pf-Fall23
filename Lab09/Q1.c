@@ -15,3 +15,4 @@ int main()
     printf("j=%d, k=%d\n",j,k);
     return 0;
 }
+//Pointers were needed to pass the address of 'j' and 'k' into 'a' and 'b'.
