@@ -1,5 +1,4 @@
 /* Programmer: Syed Saif ur Rehman Shah
-* Date: 10/10/2023
 * Description: This is the code for Question 4
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/tree/main/Lab03
 */
