@@ -1,3 +1,8 @@
+/**
+ * Programmer: Syed Saif ur Rehman Shah.
+ * Description: Using 2D array to manage data.
+*/
+
 #include <stdio.h>
 
 int main() {
