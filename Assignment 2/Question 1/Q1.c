@@ -1,9 +1,3 @@
-/* Programmer: Syed Saif ur Rehman Shah
-* Date: 10/10/2023
-* Description: This is the code for Question 1
-* Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
-*/
-
 #include <stdio.h>
 
 int main() 
