@@ -5,48 +5,43 @@
 
 #include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter the size of the matrix (n x n): ");
+int main()
+{
+    int n, max = 0, count;
+    printf("Enter the value of N: ");
     scanf("%d", &n);
-
-    int grid[n][n];
-
-    // Input the elements of the matrix
-    printf("Enter the elements of the matrix:\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            scanf("%d", &grid[i][j]);
-        }
-    }
-
-    // Initialize the size of the "maxLocal" matrix
-    int maxLocalSize = n - 2;
-    int maxLocal[maxLocalSize][maxLocalSize];
-
-    // Find the maximum values in each 3x3 submatrix
-    for (int i = 0; i < maxLocalSize; i++) {
-        for (int j = 0; j < maxLocalSize; j++) {
-            int max = grid[i][j];
-            for (int k = 0; k < 3; k++) {
-                for (int l = 0; l < 3; l++) {
-                    if (grid[i + k][j + l] > max) {
-                        max = grid[i + k][j + l];
+    
+    int joemama[n][n];
+    printf("Enter the elements of array:\n");
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++) scanf("%d", &joemama[i][j]);}
+        
+    int find[n-2][n-2];
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<n; j++)
+        {
+            max = joemama[i][j];
+            for(int k=0; k<3; k++)
+            {
+                for(int l=0; l<3; l++)
+                {
+                    if(max < joemama[i+k][j+l])
+                    {
+                        max = joemama[i+k][j+l];
                     }
                 }
             }
-            maxLocal[i][j] = max;
+            find[i][j] = max;
         }
     }
-
-    // Print the "maxLocal" matrix
-    printf("Generated maxLocal matrix:\n");
-    for (int i = 0; i < maxLocalSize; i++) {
-        for (int j = 0; j < maxLocalSize; j++) {
-            printf("%d ", maxLocal[i][j]);
+    printf("Generated MaxLocal Matrix: \n");
+    for(int i=0; i<n-2; i++)
+    {
+        for(int j=0; j<n-2; j++)
+        {
+            printf("%d ", find[i][j]);
         }
         printf("\n");
     }
-
-    return 0;
 }
