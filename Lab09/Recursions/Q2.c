@@ -16,5 +16,5 @@ int main()
     printf("Enter two number: ");
     scanf("%d%d", &a, &b);
     multiply(a,b);
-    printf("The product of %d and %d is: %d", a, b, multiply(a,b));
+    printf("The product of %d and %d is %d", a, b, multiply(a,b));
 }
