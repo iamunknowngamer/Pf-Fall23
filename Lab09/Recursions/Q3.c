@@ -5,31 +5,25 @@
 #include <stdio.h>
 
 int GCD(int a,int b)
-{   
+{  
     int gcd;
     if(a>b){
-        if(a%b == 0) gcd = b;
+        if(a%b == 0 || a==0) gcd = b;
         else{
             gcd = a;
             while(a>0){
-                if(a%gcd==0 && b%gcd==0){
-                    gcd = a;
-                    break;
-                }
-                else a--;
+                if(a%gcd==0 && b%gcd==0) break;
+                else gcd--;
             }
         }
     }
     if(b>a){
-        if(b%a == 0) gcd = a;
+        if(b%a == 0 || b==0) gcd = a;
         else{
             gcd = b;
-            while(a>0){
-                if(a%gcd==0 && b%gcd==0){
-                    gcd = b;
-                    break;
-                }
-                else b--;
+            while(b>0){
+                if(a%gcd==0 && b%gcd==0) break;
+                else gcd--;
             }
         }
     }
@@ -43,6 +37,7 @@ int main()
     scanf("%d%d", &a, &b);
     GCD(a,b);
 }
+
 
 
 /* Programmer: Syed Saif ur Rehman Shah
