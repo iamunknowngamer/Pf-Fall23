@@ -54,6 +54,7 @@ int main()
 int GCD(int a,int b)
 {   
     if(b%a == 0) return a;
+    else return GCD(b--, a%b);
     if(a%b == 0) return b;
     else return GCD(a--, b%a);
 }
@@ -63,5 +64,5 @@ int main()
     printf("Enter the values for 'a' and 'b' : ");
     scanf("%d%d", &a, &b);
     int result = GCD(a,b);
-    printf("The GCD of %d and %d is %d.",a,b,result);
+    printf("The GCD of %d and %d using recursion is %d.",a,b,result);
 }
