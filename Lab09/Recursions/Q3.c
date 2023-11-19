@@ -43,3 +43,25 @@ int main()
     scanf("%d%d", &a, &b);
     GCD(a,b);
 }
+
+
+/* Programmer: Syed Saif ur Rehman Shah
+* Description: GCD Using Recursions.
+* Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
+*/
+#include <stdio.h>
+
+int GCD(int a,int b)
+{   
+    if(b%a == 0) return a;
+    if(a%b == 0) return b;
+    else return GCD(a--, b%a);
+}
+int main()
+{
+    int a,b;
+    printf("Enter the values for 'a' and 'b' : ");
+    scanf("%d%d", &a, &b);
+    int result = GCD(a,b);
+    printf("The GCD of %d and %d is %d.",a,b,result);
+}
