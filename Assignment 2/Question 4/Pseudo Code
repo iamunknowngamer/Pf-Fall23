@@ -1,0 +1,23 @@
+function isSafe(x, y):
+    return x is within maze boundaries AND y is within maze boundaries AND maze[x][y] is not 'W' AND not visited[x][y]
+
+function findPath(x, y):
+    mark visited[x][y] as true
+    if maze[x][y] is 'E':
+        return true  // Exit is found
+    if isSafe(x, y + 1) AND findPath(x, y + 1):
+        print "Move to", x, y
+        return true
+    if isSafe(x + 1, y) AND findPath(x + 1, y):
+        print "Move to", x, y
+        return true
+    unmark visited[x][y]
+    return false
+
+function main():
+    find the starting position (startX, startY)
+    print "Output Maze after traversal:"
+    if findPath(startX, startY):
+        print "Move to", startX, startY
+    else:
+        print "No path found"
