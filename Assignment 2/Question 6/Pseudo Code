@@ -1,0 +1,17 @@
+function findPairsWithSum(arr, N, t):
+    print "Pairs with a sum equal to", t
+    for i from 0 to N-1:
+        for j from i+1 to N-1:
+            if arr[i] + arr[j] is equal to t:
+                print "(", arr[i], ",", arr[j], ")"
+
+function main():
+    print "Enter the size of the array:"
+    read N
+    declare arr of size N
+    print "Enter the elements of the array:"
+    for i from 0 to N-1:
+        read arr[i]
+    print "Enter the target integer t:"
+    read t
+    findPairsWithSum(arr, N, t)
