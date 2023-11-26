@@ -1,0 +1,52 @@
+function min(a, b, c)
+    return minimum of a, b, and c
+
+function findLargestSquareSubmatrix(rows, cols, matrix)
+    initialize dp array with dimensions rows x cols
+
+    max_size = 0
+    max_i = 0
+    max_j = 0
+
+    for i from 0 to rows - 1
+        dp[i][0] = matrix[i][0]
+        if matrix[i][0] is 1
+            max_size = 1
+            max_i = i
+            max_j = 0
+
+    for j from 0 to cols - 1
+        dp[0][j] = matrix[0][j]
+        if matrix[0][j] is 1
+            max_size = 1
+            max_i = 0
+            max_j = j
+
+    for i from 1 to rows - 1
+        for j from 1 to cols - 1
+            if matrix[i][j] is 1
+                dp[i][j] = min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+                if dp[i][j] > max_size
+                    max_size = dp[i][j]
+                    max_i = i
+                    max_j = j
+            else
+                dp[i][j] = 0
+
+    print "The largest square submatrix of 1s is:"
+    for i from max_i to max_i - max_size + 1 (decreasing)
+        for j from max_j to max_j - max_size + 1 (decreasing)
+            print matrix[i][j]
+
+    print "Dimensions (rows x columns):", max_size, "x", max_size
+
+//main start
+input rows, cols
+initialize matrix with dimensions rows x cols
+
+for i from 0 to rows - 1
+    for j from 0 to cols - 1
+        input matrix[i][j]
+
+findLargestSquareSubmatrix(rows, cols, matrix)
+//main end
