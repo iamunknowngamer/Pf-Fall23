@@ -1,0 +1,29 @@
+function bubbleSort(ages, prices, n):
+    for i from 0 to n - 2:
+        for j from 0 to n - i - 2:
+            if ages[j] > ages[j + 1] or (ages[j] == ages[j + 1] and prices[j] < prices[j + 1]):
+                swap(ages[j], ages[j + 1])
+                swap(prices[j], prices[j + 1])
+
+function main():
+    print "Enter the number of shirts:"
+    read n
+
+    declare ages array of size n
+    declare prices array of size n
+
+    for i from 0 to n - 1:
+        print "Enter age for shirt", i + 1, ":"
+        read ages[i]
+        print "Enter price for shirt", i + 1, ":"
+        read prices[i]
+
+    bubbleSort(ages, prices, n)
+
+    print "\nSorted list in ascending order with respect to Age:"
+    for i from 0 to n - 1:
+        print "Age:", ages[i], ", Price:", prices[i]
+
+    print "\nSorted list in descending order with respect to Price:"
+    for i from n - 1 down to 0:
+        print "Age:", ages[i], ", Price:", prices[i]
