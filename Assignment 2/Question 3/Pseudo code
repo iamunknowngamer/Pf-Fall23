@@ -1,0 +1,60 @@
+int availability[5][2] = { {1, 0}, {1, 1}, {0, 1}, {1, 0}, {1, 1} };
+int morningPrice[5] = {300, 320, 280, 380, 375};
+int eveningPrice[5] = {0, 310, 280, 0, 400};
+int bestDay = -1;
+int bestTimeSlot = -1;
+int highestChance = 0;
+
+for (int day = 0; day < 5; day++) {
+    for (int timeSlot = 0; timeSlot < 2; timeSlot++) {
+        if (availability[day][timeSlot] == 1) {
+            int chance = 0;
+            if (timeSlot == 0) {
+                chance = morningPrice[day];
+            } else {
+                chance = eveningPrice[day];
+            }
+            if (chance > highestChance) {
+                bestDay = day;
+                bestTimeSlot = timeSlot;
+                highestChance = chance;
+            }
+        }
+    }
+}
+
+// Print the result
+if (bestDay != -1) {
+    print("1. Best option: Day ", bestDay + 1, ", ", 
+          bestTimeSlot == 0 ? "Morning" : "Evening", " time slot");
+} else {
+    print("1. No available flights");
+}
+
+// 2. The traveler prefers morning time slot.
+print("2. Suggested day(s) for morning flight: ");
+for (int day = 0; day < 5; day++) {
+    if (availability[day][0] == 1) {
+        print("Day ", day + 1, ", ");
+    }
+}
+print("\n");
+
+// 3. The traveler prefers evening time slot.
+print("3. Suggested day(s) for evening flight: ");
+for (int day = 0; day < 5; day++) {
+    if (availability[day][1] == 1) {
+        print("Day ", day + 1, ", ");
+    }
+}
+print("\n");
+
+int specificDay = 3; // Change this to the desired day (0-4)
+if (availability[specificDay][0] == 1) {
+    print("4. Flights available on Day ", specificDay + 1, " (Morning) for $", morningPrice[specificDay], "\n");
+} else if (availability[specificDay][1] == 1) {
+    print("4. Flights available on Day ", specificDay + 1, " (Evening) for $", eveningPrice[specificDay], "\n");
+} else {
+    print("4. No flights available on Day ", specificDay + 1, "\n");
+}
+
