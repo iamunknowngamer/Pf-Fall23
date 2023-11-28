@@ -1,0 +1,16 @@
+procedure findRamanujanHardyNumbers(n):
+    limit = n^3
+    print("Ramanujan-Hardy numbers less than", n^3, ":")
+
+    for a in 1 to n:
+        for b in a to n:
+            for c in (a + 1) to n:
+                for d in c to n:
+                    if (a^3 + b^3) equals (c^3 + d^3) and (a ≠ c or b ≠ d):
+                        print(a^3 + b^3)
+
+//main
+> Get user input for 'n'
+n = input("Enter the value of n: ")
+findRamanujanHardyNumbers(n)
+//main end
