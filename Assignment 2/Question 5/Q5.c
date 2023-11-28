@@ -1,43 +1,24 @@
 #include <stdio.h>
-
-// Function to check if a number is a Ramanujan-Hardy number
-int isRamanujanHardy(int num) {
-    int i, j;
-
-    // Loop through all possible pairs of cubes
-    for (i = 1; i <= num; i++) {
-        for (j = i; j <= num; j++) {
-            if (i * i * i + j * j * j == num && i != j) {
-                // Found a pair of cubes that sum to the number
-                return 1;
-            }
-        }
-    }
-
-    return 0;
-}
-
-// Function to find and display Ramanujan-Hardy numbers less than n^3
-void findRamanujanHardy(int n) {
-    printf("Ramanujan-Hardy numbers less than %d^3:\n", n);
-
-    // Loop through all numbers less than n^3
-    for (int num = 1; num < n * n * n; num++) {
-        if (isRamanujanHardy(num)) {
-            printf("%d\n", num);
-        }
-    }
-}
+#include <math.h>
 
 int main() {
     int n;
-
-    // Input the value of n
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    // Find and display Ramanujan-Hardy numbers less than n^3
-    findRamanujanHardy(n);
+    int limit = pow(n, 3);
 
-    return 0;
+    printf("Ramanujan-Hardy numbers less than %d^3:\n", n);
+
+    for (int a = 1; a <= n; a++) {
+        for (int b = a; b <= n; b++) {
+            for (int c = a + 1; c <= n; c++) {
+                for (int d = c; d <= n; d++) {
+                    if ((a * a * a + b * b * b) == (c * c * c + d * d * d) && (a != c || b != d)) {
+                        printf("%d\n", a * a * a + b * b * b);
+                    }
+                }
+            }
+        }
+    }
 }
