@@ -22,3 +22,4 @@ int main() {
         }
     }
 }
+//can be done using fuction too.
