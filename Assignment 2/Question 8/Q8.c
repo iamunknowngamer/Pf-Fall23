@@ -4,13 +4,13 @@ int calculatePersistence(int n)
 {
     int persistence = 0;
     
-    while (number >= 10) {
+    while (n >= 10) {
         int product = 1;
-            while (number > 0) {
-                product *= number % 10;
-                number /= 10;
+            while (n > 0) {
+                product *= n % 10;
+                n /= 10;
             }
-        number = product;
+        n = product;
         persistence++;
     }
     return persistence;
@@ -32,4 +32,3 @@ int main()
     }
     printf("\nProgram terminated.\n");
 }
-
