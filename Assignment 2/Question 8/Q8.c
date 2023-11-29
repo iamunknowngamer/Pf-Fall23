@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int calculatePersistence(int number)
+int calculatePersistence(int n)
 {
     int persistence = 0;
     
@@ -18,15 +18,15 @@ int calculatePersistence(int number)
 
 int main() 
 {
-    int userInput;
+    int n;
     printf("Enter a positive integer (EOF to exit): ");
 
-    while (scanf("%d", &userInput) == 1) {
-        if (userInput <= 0) printf("Please enter a positive integer.\n");
+    while (scanf("%d", &n) == 1) {
+        if (n <= 0) printf("Please enter a positive integer.\n");
         else
         {
-            int persistence = calculatePersistence(userInput);
-            printf("Persistence of %d is %d\n", userInput, persistence);
+            int persistence = calculatePersistence(n);
+            printf("Persistence of %d is %d\n", n, persistence);
         }
         while (getchar() != '\n'); printf("\nEnter a positive integer (EOF to exit): "); 
     }
