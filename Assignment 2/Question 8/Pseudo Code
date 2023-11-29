@@ -1,1 +1,38 @@
+Function calculatePersistence(number)
+    persistence = 0
+
+    while (number >= 10) 
+        product = 1
+
+        while (number > 0) 
+            product *= number % 10
+            number /= 10
+        end while
+        
+        number = product
+        persistence++
+    end while
+    
+    return persistence
+End Function
+
+Function main()
+    userInput
+
+    Print "Enter a positive integer (EOF to exit): "
+
+    while (Scan user input is successful) 
+        if (userInput is not a positive integer)
+            Print "Please enter a positive integer."
+        else
+            persistence = calculatePersistence(userInput)
+            Print "Persistence of", userInput, "is", persistence
+        end if
+
+        while (Clear input buffer until a newline character is encountered)
+        Print "Enter a positive integer (EOF to exit): "
+    end while
+    
+    Print "Program terminated."
+End Main
 
