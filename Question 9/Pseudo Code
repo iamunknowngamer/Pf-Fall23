@@ -69,7 +69,7 @@ Procedure descending(outwards, n):
         For j from 0 to n-1:
             Print outwards[i][j]
         Print newline
-//end function for outwars array
+//end function for outwards array
 
 Procedure main():
     Set n = 5
