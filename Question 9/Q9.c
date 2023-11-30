@@ -29,7 +29,7 @@ void ascending(int inwards[100][100], int n) {
     printf("\n---------------Inwards Array---------------\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            printf("%-3d", inwards[i][j]);
+            printf("%-3d", inwards[i][j]); //can use \t for highner n values to be printed fairly.
         }
         printf("\n");
     }
