@@ -12,7 +12,7 @@ bool isPrime(int num){
         return false;
     }
     for (int i=2; i*i<=num; i++){
-        if (num%i == 0) {
+        if (num%i == 0){
             return false;
         }
     }
