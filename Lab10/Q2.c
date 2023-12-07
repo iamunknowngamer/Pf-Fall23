@@ -6,16 +6,13 @@
 #include <stdio.h>
 
 void swap(void* a, void* b, size_t size){
-    unsigned char* byteA = (unsigned char*)a;
-    unsigned char* byteB = (unsigned char*)b;
+    unsigned char* A = (unsigned char*)a;
+    unsigned char* B = (unsigned char*)b;
 
-    for(size_t i = 0; i < size; ++i){
-        *byteA ^= *byteB;
-        *byteB ^= *byteA;
-        *byteA ^= *byteB;
-
-        ++byteA;
-        ++byteB;
+    for(size_t i = 0; i < size; i++){
+        A[i] ^= B[i];
+        B[i] ^= A[i];
+        A[i] ^= B[i];
     }
 }
 
