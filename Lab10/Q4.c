@@ -1,5 +1,5 @@
 /* Programmer: Syed Saif ur Rehman Shah
-* Description: Printing the
+* Description: Printing the words of a sentence in reversed order.
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
 */
 
