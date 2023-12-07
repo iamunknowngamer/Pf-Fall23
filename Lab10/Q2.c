@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-void swap(void* a, void* b, size_t size) {
+void swap(void* a, void* b, size_t size){
     unsigned char* byteA = (unsigned char*)a;
     unsigned char* byteB = (unsigned char*)b;
 
@@ -19,7 +19,7 @@ void swap(void* a, void* b, size_t size) {
     }
 }
 
-int main() {
+int main(){
     //with integers
     int num1 = 5;
     int num2 = 10;
@@ -32,7 +32,7 @@ printf("----------x------------x------------x-----------x\n\n");
     //with doubles
     double dbl1 = 3.14;
     double dbl2 = 6.28;
-    printf("Before swap: dbl1 = %.2f, dbl2 = %.2f\n", dbl1, dbl2);
+    printf("Before swap: double1 = %.2f, double2 = %.2f\n", dbl1, dbl2);
     swap(&dbl1, &dbl2, sizeof(double));
-    printf("\nAfter swap: dbl1 = %.2f, dbl2 = %.2f\n", dbl1, dbl2);
+    printf("\nAfter swap: double1 = %.2f, double2 = %.2f\n", dbl1, dbl2);
 }
