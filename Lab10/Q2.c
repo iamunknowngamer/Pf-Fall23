@@ -1,5 +1,5 @@
 /* Programmer: Syed Saif ur Rehman Shah
-* Description: Reversing the values of two nunbers, by casting to unsigned char and using variable type size_t.
+* Description: Interchanging the values of any two variable type, by casting to unsigned char and using XOR operator.
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
 */
 
