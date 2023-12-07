@@ -1,5 +1,5 @@
 /* Programmer: Syed Saif ur Rehman Shah
-* Description: 
+* Description: Printing a 2D array of prime with dynamic memory allocation of the 2D array used.
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
 */
 
