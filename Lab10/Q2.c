@@ -30,9 +30,9 @@ int main(){
 printf("----------x------------x------------x-----------x\n\n");
 
     //with doubles
-    double dbl1 = 3.14;
-    double dbl2 = 6.28;
-    printf("Before swap: double1 = %.2f, double2 = %.2f\n", dbl1, dbl2);
-    swap(&dbl1, &dbl2, sizeof(double));
-    printf("\nAfter swap: double1 = %.2f, double2 = %.2f\n", dbl1, dbl2);
+    double d1 = 3.14;
+    double d2 = 6.28;
+    printf("Before swap: double1 = %.2f, double2 = %.2f\n", d1, d2);
+    swap(&d1, &d2, sizeof(double));
+    printf("\nAfter swap: double1 = %.2f, double2 = %.2f\n", d1, d2);
 }
