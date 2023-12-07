@@ -34,5 +34,14 @@ printf("----------x------------x------------x-----------x\n\n");
     double d2 = 6.28;
     printf("Before swap: double1 = %.2f, double2 = %.2f\n", d1, d2);
     swap(&d1, &d2, sizeof(double));
-    printf("\nAfter swap: double1 = %.2f, double2 = %.2f\n", d1, d2);
+    printf("\nAfter swap: double1 = %.2f, double2 = %.2f\n\n", d1, d2);
+    
+    printf("----------x------------x------------x-----------x\n\n");
+    
+    //with char
+    char c1 = 'A';
+    char c2 = 'B';
+    printf("Before swap: char1 = %c, char2 = %c\n", c1, c2);
+    swap(&c1, &c2, sizeof(char));
+    printf("\nAfter swap: char1 = %c, char2 = %c\n\n", c1, c2);
 }
