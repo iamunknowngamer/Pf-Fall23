@@ -1,3 +1,8 @@
+/* Programmer: Syed Saif ur Rehman Shah
+* Description: Using <time.h> to display the time taken to allocate memory for arrays in different ways.
+* Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
