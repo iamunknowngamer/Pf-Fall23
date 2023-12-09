@@ -1,3 +1,8 @@
+/* Programmer: Syed Saif ur Rehman Shah
+*  Description: This is the code for Question 1
+*  Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
+*/
+
 #include <stdio.h>
 
 typedef struct Box {
