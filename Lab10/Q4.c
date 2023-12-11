@@ -6,38 +6,21 @@
 #include <stdio.h>
 #include <string.h>
 
-void reverseWord(char* start, char* end){
-    while (start < end){
-        char temp = *start;
-        *start = *end;
-        *end = temp;
-        start++;
-        end--;
+void reverse(char sentence[100]){
+    int length = strlen(sentence);
+    for(int i=0, j=length-1; i<j; i++, j--) {
+        char temp = sentence[i];
+        sentence[i] = sentence[j];
+        sentence[j] = temp;
     }
-}
-
-void reverseWords(char* sentence){
-    char* start = sentence;
-    char* end = sentence;
-    
-    while (*end != '\0'){
-        if (*end == ' '){
-            reverseWord(start, end - 1);
-            start = end + 1;
-        }
-        end++;
-    }
-    reverseWord(start, end - 1);
+    printf("Reversed sentence: %s\n", sentence);
 }
 
 int main(){
-    char sentence[1000];
-    
+    char sentence[100];
     printf("Enter a sentence: ");
     fgets(sentence, sizeof(sentence), stdin);
-
     sentence[strcspn(sentence, "\n")] = '\0';
-    reverseWords(sentence);
-
-    printf("Modified Sentence: %s\n", sentence);
+    reverse(sentence);
 }
+
