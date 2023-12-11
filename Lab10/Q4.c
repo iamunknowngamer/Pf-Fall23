@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void reverseWord(char *start, char *end) {
+void reverseword(char *start, char *end) {
     while (start < end) {
         char temp = *start;
         *start = *end;
@@ -16,24 +16,23 @@ void reverseWord(char *start, char *end) {
     }
 }
 
-void reverseWords(char *sentence) {
+void reverse(char *sentence) {
     char *start = sentence;
     char *end = sentence;
     while (*end != '\0') {
         if (*end == ' ' || *end == '\n' || *end == '\t') {
-            reverseWord(start, end - 1);
+            reverseword(start, end - 1);
             start = end + 1;
         }
         end++;
     }
-    reverseWord(start, end - 1); // if only one word
+    reverseword(start, end - 1); // if only one word
 }
 
 int main() {
     char sentence[100];
     printf("Enter a sentence: ");
     gets(sentence);
-    reverseWords(sentence);
+    reverse(sentence);
     printf("Modified sentence: %s\n", sentence);
 }
-
