@@ -19,8 +19,7 @@ void reverse(char sentence[100]){
 int main(){
     char sentence[100];
     printf("Enter a sentence: ");
-    fgets(sentence, sizeof(sentence), stdin);
-    sentence[strcspn(sentence, "\n")] = '\0';
+    gets(sentence);
     reverse(sentence);
 }
 
