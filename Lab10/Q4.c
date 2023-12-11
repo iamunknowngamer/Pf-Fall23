@@ -18,8 +18,7 @@ void reverseWord(char *start, char *end) {
 
 void reverseWords(char *sentence) {
     char *start = sentence;
-    char *end = sentence + strlen(sentence) - 1;
-    start = end = sentence;
+    char *end = sentence;
     while (*end != '\0') {
         if (*end == ' ' || *end == '\n' || *end == '\t') {
             reverseWord(start, end - 1);
@@ -37,3 +36,4 @@ int main() {
     reverseWords(sentence);
     printf("Modified sentence: %s\n", sentence);
 }
+
