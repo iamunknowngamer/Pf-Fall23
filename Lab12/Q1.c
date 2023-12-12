@@ -5,37 +5,35 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#define MAX_BUFFER_SIZE 100
 
-int format_line(char str[100])
-{
-    char delim[2] = ",";
-    int cols = 0;
-    char *col = strtok(str, delim);
-    while (col != NULL) {
-        cols++;
-        col[strcspn(col, "\n")] = 0; 
-        printf("%-14s | ", col);
-        col = strtok(NULL, delim);
-    }
-    printf("\n");
-    return cols;
-} 
+void find(FILE *t1){
 
-void read_file(FILE *fptr)
-{
-    char buffer[MAX_BUFFER_SIZE];
-    int rows = 0, cols = 0;
-    while (!feof(fptr)) {
-        rows = format_line(fgets(buffer, MAX_BUFFER_SIZE, fptr)); 
-        cols++;
+    int cols=0,rows=1;
+    char buffer[100];
+
+    if((fgets(buffer, 100, t1)) != NULL){
+        char *token = strtok(buffer, ",");
+        while(token != NULL){
+            cols++;
+            token = strtok(NULL, ",");
+        }
     }
-    printf("\n\nrows: %d, cols: %d", cols, rows);
-} 
-int main()
-{
-    FILE *fptr = fopen("Homies.txt", "r");
-    read_file(fptr);
-    fclose(fptr);
+    while((fgets(buffer, 100, t1)) != NULL) rows++;
+    
+    printf("The rows are %d\nThe columns are %d\nThe data in the file is;\n", rows, cols);
+    fseek(t1, 0, SEEK_SET);
+    while(fgets(buffer, 100, t1) != NULL){
+        char *token = strtok(buffer, ",");
+        while(token != NULL){
+            printf("%-15s", token);
+            token = strtok(NULL, ",");
+        }
+        printf("\n");
+    }
+}
+
+int main(){
+    FILE *t1 = fopen("T1.txt", "r");
+    find(t1);
+    fclose(t1);
 }
