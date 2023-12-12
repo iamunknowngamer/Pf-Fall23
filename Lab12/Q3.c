@@ -1,5 +1,5 @@
 /* Programmer: Syed Saif ur Rehman Shah
-* Description: Managing Date using a file.
+* Description: Managing Data using a file.
 * Related files: https://github.com/iamunknowngamer/Pf-Fall23/blob/main/Lab06/Q6.c
 */
 #include <stdlib.h>
